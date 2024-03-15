@@ -9,11 +9,7 @@
 
 USER=add_here_your_user_name
 
----
-
 PASSWORD=add_here_your_password_name
-
----
 
 HOST=add_here_your_host_name
 
