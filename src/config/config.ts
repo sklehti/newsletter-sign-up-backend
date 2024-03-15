@@ -1,9 +1,12 @@
 import mysql from "mysql";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 const con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "KasV814?!4510",
+  host: process.env.HOST,
+  user: process.env.USER,
+  password: process.env.PASSWORD,
 });
 const dropOldDatabase = "DROP DATABASE newsletter_sing_up;";
 const createDatabase = "CREATE DATABASE newsletter_sing_up;";

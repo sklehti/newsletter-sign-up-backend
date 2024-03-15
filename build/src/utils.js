@@ -23,12 +23,13 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.usersArraySchema = exports.userSchema = void 0;
+exports.databaseSchema = exports.userSchema = void 0;
 const z = __importStar(require("zod"));
 exports.userSchema = z.object({
     id: z.number().optional(),
     email: z.string().email(),
 });
-exports.usersArraySchema = z.object({
-    users: exports.userSchema.array(),
+exports.databaseSchema = z.object({
+    id: z.number().optional(),
+    email: z.string(),
 });
