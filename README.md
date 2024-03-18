@@ -15,3 +15,15 @@ HOST=add_here_your_host_name
 
 - npm install
 - npm start
+
+## frontend installation (url: https://github.com/sklehti/newsletter-sign-up )
+
+- git clone https://github.com/sklehti/newsletter-sign-up.git
+- cd newsletter-sign-up/
+- npm install
+- git branch -a
+- git checkout app-with-axios
+- npm install axios
+- npm start
+
+- now you can see database changes at the following url: http://localhost:3001/userInfo
